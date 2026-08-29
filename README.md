@@ -3,17 +3,17 @@ NLP project for propaganda technique classification and span identification usin
 
 # Overview
 This project investigates automatic detection of propaganda in text through two related tasks:
-1. **Propaganda Technique Classification** – classifying a given propaganda span into one of eight propaganda techniques.
-2. **Propaganda Span Identification** – identifying the propaganda spans within a sentence and classifying them using BIO tagging.
+1. **Propaganda Technique Classification** - classifying a given propaganda span into one of eight propaganda techniques.
+2. **Propaganda Span Identification** - identifying the propaganda spans within a sentence and classifying them using BIO tagging.
 The project compares traditional TF-IDF-based machine learning with transformer-based DistilBERT models.
 
 # Dataset
 The dataset contains propaganda-labelled sentences in TSV format, with propaganda spans marked using `<BOS>` and `<EOS>` tags.
 For Task 1, non-propaganda examples were removed because the objective was to classify propaganda techniques.
 For Task 2, the complete sentence context was retained and BIO labels were generated:
-- `B` – beginning of a propaganda span
-- `I` – inside a propaganda span
-- `O` – outside a propaganda span
+- `B` - beginning of a propaganda span
+- `I` - inside a propaganda span
+- `O` - outside a propaganda span
 
 # Methods
 
